@@ -6,19 +6,14 @@ window.addEventListener('scroll', () => {
 
 // ─── HAMBURGER MENU ───
 const hamburger = document.getElementById('hamburger');
+const navLinksEl = document.querySelector('.nav-links');
 hamburger.addEventListener('click', () => {
-  const links = document.querySelector('.nav-links');
-  const btn = document.querySelector('.btn-nav');
-  links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
-  links.style.flexDirection = 'column';
-  links.style.position = 'absolute';
-  links.style.top = '72px';
-  links.style.left = '0';
-  links.style.right = '0';
-  links.style.background = '#fff';
-  links.style.padding = '1rem 2rem 1.5rem';
-  links.style.boxShadow = '0 8px 24px rgba(0,0,0,0.08)';
-  links.style.zIndex = '999';
+  navLinksEl.classList.toggle('open');
+  hamburger.setAttribute('aria-expanded', navLinksEl.classList.contains('open'));
+});
+// Close menu when a link is tapped on mobile
+navLinksEl.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => navLinksEl.classList.remove('open'));
 });
 
 // ─── SCROLL REVEAL ───

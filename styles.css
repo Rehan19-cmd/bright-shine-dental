@@ -1067,22 +1067,156 @@ p { color: var(--text-muted); }
   .appt-left, .appt-right { max-width: 100%; margin: 0; padding: 0 2rem; }
 }
 
-@media (max-width: 768px) {
-  .nav-links, .btn-nav { display: none; }
-  .hamburger { display: flex; }
-  .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-template-rows: auto; }
-  .gi-1, .gi-4 { grid-column: span 1; }
-  .footer-links { grid-template-columns: 1fr 1fr; }
-  .footer-bottom { flex-direction: column; text-align: center; }
-  .form-row { grid-template-columns: 1fr; }
-  .rating-summary { flex-direction: column; text-align: center; }
-  .chat-window { width: 300px; }
+/* ─── TABLET (≤ 1024px) ─── */
+@media (max-width: 1024px) {
+  /* Hero */
+  .hero { flex-direction: column; text-align: center; padding-top: 100px; gap: 2rem; }
+  .hero-cta, .hero-stats { justify-content: center; }
+  .hero-visual { flex: none; width: 100%; display: flex; justify-content: center; }
+  .hero-card { width: 260px; height: 260px; }
+  .floating-pill { font-size: 0.68rem; padding: 5px 10px; }
+  .p1 { left: -5%; top: 10%; }
+  .p2 { right: -5%; bottom: 22%; }
+  .p3 { bottom: 2%; left: 0%; }
+  /* Layout blocks */
+  .why-us { grid-template-columns: 1fr; gap: 2.5rem; padding: 4rem 1.5rem; }
+  .why-left, .why-right { padding: 0; }
+  .about-content { grid-template-columns: 1fr; }
+  .doctor-card { position: static; }
+  .appointment { grid-template-columns: 1fr; gap: 2.5rem; padding: 4rem 1.5rem; }
+  .appt-left, .appt-right { max-width: 100%; margin: 0; padding: 0 1.5rem; }
 }
 
-@media (max-width: 480px) {
-  .hero h1 { font-size: 2rem; }
-  .gallery-grid { grid-template-columns: 1fr; }
-  .footer-links { grid-template-columns: 1fr; }
-  .hero-stats { gap: 1rem; }
+/* ─── MOBILE (≤ 768px) ─── */
+@media (max-width: 768px) {
+  /* Nav */
+  .nav-links { display: none; flex-direction: column; position: absolute; top: 72px; left: 0; right: 0; background: #fff; padding: 1rem 2rem 1.5rem; box-shadow: 0 8px 24px rgba(0,0,0,0.08); z-index: 999; gap: 0.25rem; }
+  .nav-links.open { display: flex; }
+  .btn-nav { display: none; }
+  .hamburger { display: flex; }
+
+  /* Hero */
+  .hero { padding: 90px 1.25rem 3rem; gap: 2rem; }
+  .hero h1 { font-size: clamp(1.75rem, 7vw, 2.4rem); }
+  .hero > .hero-content > p { font-size: 0.92rem; }
+  .hero-card { width: 220px; height: 220px; }
+  .floating-pill { font-size: 0.62rem; padding: 4px 8px; }
+  .p1 { left: -2%; top: 8%; }
+  .p2 { right: -2%; bottom: 20%; }
+  .p3 { display: none; }
+  .hero-stats { gap: 1.25rem; }
+  .stat strong { font-size: 1.2rem; }
+  .hero-cta { flex-direction: column; align-items: center; gap: 0.75rem; }
+  .btn-primary, .btn-outline { width: 100%; max-width: 280px; text-align: center; }
+  .scroll-down { display: none; }
+
+  /* Sections */
+  .services { padding: 3.5rem 1.25rem; }
+  .services-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .section-header { margin-bottom: 2rem; }
+  .section-header h2 { font-size: 1.7rem; }
+
+  /* Why us */
+  .why-us { padding: 3.5rem 1.25rem; }
+  .why-stats-grid { grid-template-columns: 1fr 1fr; }
+
+  /* About */
+  .about { padding: 3.5rem 1.25rem; }
+  .about-text h3 { font-size: 1.3rem; }
+
+  /* Gallery */
+  .gallery { padding: 3.5rem 1.25rem; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-template-rows: auto; gap: 0.75rem; }
+  .gi-1, .gi-4 { grid-column: span 1; }
+  .gallery-item { height: 150px; }
+
+  /* Testimonials */
+  .testimonials { padding: 3.5rem 1.25rem; }
+  .testimonials-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .rating-summary { flex-direction: column; text-align: center; gap: 1rem; padding: 1.5rem; }
+  .big-rating { font-size: 3.5rem; }
+
+  /* Appointment */
+  .appointment { padding: 3.5rem 1.25rem; }
+  .appt-left, .appt-right { padding: 0; }
+  .appt-form { padding: 1.5rem; }
+  .form-row { grid-template-columns: 1fr; }
+
+  /* Contact */
+  .contact { padding: 3.5rem 1.25rem; }
+  .contact-grid { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+  .map-placeholder { height: 220px; }
+
+  /* Footer */
+  .footer { padding: 3rem 1.25rem 1.5rem; }
+  .footer-links { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  .footer-bottom { flex-direction: column; text-align: center; gap: 0.4rem; }
+
+  /* Chat widget */
   .chat-widget { bottom: 1rem; right: 1rem; }
+  .chat-window { width: calc(100vw - 2rem); right: 0; max-width: 320px; }
+
+  /* Dental video */
+  .dental-video-section { padding: 3rem 1.25rem 2.5rem; }
+  .dv-facts { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+  .dvp-badge { display: none; }
+  .dvp-controls { gap: 8px; padding: 8px 12px; }
+
+  /* Scroll story */
+  .story-scene {
+    justify-content: center !important;
+    align-items: flex-end;
+    padding: 0 1.25rem 5vh;
+  }
+  .achievement-item {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+  .ach-title { font-size: clamp(1.5rem, 6vw, 2rem); }
+  .ach-desc { font-size: 0.86rem; }
+  .ach-stats-row { gap: 1rem; }
+  .ach-stat strong { font-size: 1.9rem; }
+  .scene-label { font-size: 0.6rem; right: 1rem; }
+}
+
+/* ─── SMALL MOBILE (≤ 480px) ─── */
+@media (max-width: 480px) {
+  /* Nav */
+  #navbar { padding: 0 1rem; }
+
+  /* Hero */
+  .hero { padding: 80px 1rem 2.5rem; }
+  .hero h1 { font-size: 1.7rem; }
+  .hero-card { width: 180px; height: 180px; }
+  .floating-pill { display: none; }
+  .hero-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+
+  /* Gallery */
+  .gallery-grid { grid-template-columns: 1fr; }
+  .gallery-item { height: 160px; }
+
+  /* Contact */
+  .contact-grid { grid-template-columns: 1fr; }
+
+  /* Footer */
+  .footer-links { grid-template-columns: 1fr; }
+
+  /* Appointment form */
+  .appt-form { padding: 1.25rem; border-radius: 16px; }
+
+  /* Video */
+  .dv-facts { grid-template-columns: 1fr 1fr; }
+  .dvp-time { display: none; }
+
+  /* Story */
+  .scroll-story { height: 450vh; }
+  .achievement-item { padding: 1.25rem; border-radius: 16px; }
+  .ach-title { font-size: 1.5rem; }
+  .ach-stats-row { flex-wrap: wrap; gap: 0.75rem; }
+  .ach-stat strong { font-size: 1.6rem; }
+  .cred-badge, .award-badge { font-size: 0.78rem; padding: 8px 12px; }
+
+  /* Chat */
+  .chat-window { width: calc(100vw - 1.5rem); }
+  .chat-toggle { width: 52px; height: 52px; font-size: 1.3rem; }
 }
