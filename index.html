@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Bansode's Bright & Shine Dental Square – Best Dental Clinic Pune</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+</head>
+<body>
+
+  <!-- ─── NAV ─── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="logo">
+        <span class="logo-icon">🦷</span>
+        <div>
+          <span class="logo-title">Bright & Shine</span>
+          <span class="logo-sub">Dental Square</span>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#appointment" class="btn-nav">Book Appointment</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section id="home" class="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape s1"></div>
+      <div class="shape s2"></div>
+      <div class="shape s3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">⭐ 4.9 Rating · 48 Happy Patients</div>
+      <h1>Your Smile Is Our<br /><span class="gradient-text">Greatest Achievement</span></h1>
+      <p>Expert dental care in Pune by <strong>Dr. Pooja Bhure-Bansode</strong>, BDS Dental Surgeon.<br />
+         Modern equipment · Pain-free treatments · Trusted by families across Pune.</p>
+      <div class="hero-cta">
+        <a href="#appointment" class="btn-primary">Book Free Consultation</a>
+        <a href="#services" class="btn-outline">Explore Services</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>10+</strong><span>Years Experience</span></div>
+        <div class="stat"><strong>5000+</strong><span>Smiles Created</span></div>
+        <div class="stat"><strong>4.9★</strong><span>Google Rating</span></div>
+        <div class="stat"><strong>100%</strong><span>Sterilized Tools</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div class="hero-card-inner">
+          <div class="tooth-anim">🦷</div>
+          <div class="pulse-ring"></div>
+          <div class="floating-pill p1">✨ Pain-Free Treatment</div>
+          <div class="floating-pill p2">🏆 Best Dental Clinic Pune</div>
+          <div class="floating-pill p3">💉 Latest Technology</div>
+        </div>
+      </div>
+    </div>
+    <a href="#services" class="scroll-down">
+      <span>Scroll Down</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </a>
+  </section>
+
+  <!-- ─── MARQUEE STRIP ─── -->
+  <div class="marquee-strip">
+    <div class="marquee-inner">
+      <span>✦ Teeth Whitening</span>
+      <span>✦ Dental Implants</span>
+      <span>✦ Orthodontics</span>
+      <span>✦ Root Canal</span>
+      <span>✦ Veneers</span>
+      <span>✦ Pediatric Dentistry</span>
+      <span>✦ Smile Makeover</span>
+      <span>✦ Crowns & Bridges</span>
+      <span>✦ Teeth Whitening</span>
+      <span>✦ Dental Implants</span>
+      <span>✦ Orthodontics</span>
+      <span>✦ Root Canal</span>
+      <span>✦ Veneers</span>
+      <span>✦ Pediatric Dentistry</span>
+    </div>
+  </div>
+
+  <!-- ─── SERVICES ─── -->
+  <section id="services" class="services">
+    <div class="section-header">
+      <span class="section-tag">Our Services</span>
+      <h2>Comprehensive Dental Care<br />Under One Roof</h2>
+      <p>From routine checkups to full smile makeovers — we handle it all with precision and care.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card" data-delay="0">
+        <div class="service-icon">🦷</div>
+        <h3>Dental Implants</h3>
+        <p>Permanent titanium implants that look, feel, and function exactly like your natural teeth.</p>
+        <a href="#appointment" class="service-link">Book Now →</a>
+      </div>
+      <div class="service-card" data-delay="100">
+        <div class="service-icon">✨</div>
+        <h3>Teeth Whitening</h3>
+        <p>Professional-grade whitening that gives you a dazzling smile up to 8 shades brighter.</p>
+        <a href="#appointment" class="service-link">Book Now →</a>
+      </div>
+      <div class="service-card featured" data-delay="200">
+        <div class="service-badge">Most Popular</div>
+        <div class="service-icon">😁</div>
+        <h3>Smile Makeover</h3>
+        <p>Complete smile transformation combining veneers, whitening, and contouring for a Hollywood smile.</p>
+        <a href="#appointment" class="service-link">Book Now →</a>
+      </div>
+      <div class="service-card" data-delay="300">
+        <div class="service-icon">🔬</div>
+        <h3>Root Canal Treatment</h3>
+        <p>Pain-free root canal therapy using rotary instruments to save your natural tooth.</p>
+        <a href="#appointment" class="service-link">Book Now →</a>
+      </div>
+      <div class="service-card" data-delay="400">
+        <div class="service-icon">📐</div>
+        <h3>Orthodontics / Braces</h3>
+        <p>Metal braces, ceramic braces, and clear aligners to straighten your teeth discreetly.</p>
+        <a href="#appointment" class="service-link">Book Now →</a>
+      </div>
+      <div class="service-card" data-delay="500">
+        <div class="service-icon">👶</div>
+        <h3>Pediatric Dentistry</h3>
+        <p>Gentle, child-friendly dental care in a warm environment that makes kids love the dentist!</p>
+        <a href="#appointment" class="service-link">Book Now →</a>
+      </div>
+      <div class="service-card" data-delay="600">
+        <div class="service-icon">👑</div>
+        <h3>Crowns & Bridges</h3>
+        <p>High-quality ceramic crowns and bridges that restore strength and beauty to damaged teeth.</p>
+        <a href="#appointment" class="service-link">Book Now →</a>
+      </div>
+      <div class="service-card" data-delay="700">
+        <div class="service-icon">🏥</div>
+        <h3>Preventive Care</h3>
+        <p>Regular cleanings, scaling, polishing, and fluoride treatments to keep your smile healthy.</p>
+        <a href="#appointment" class="service-link">Book Now →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── WHY CHOOSE US ─── -->
+  <section class="why-us">
+    <div class="why-left">
+      <span class="section-tag">Why Choose Us</span>
+      <h2>Pune's Most Trusted<br />Dental Clinic</h2>
+      <p>We blend advanced technology with a warm, personal touch — so every visit feels safe, comfortable, and effective.</p>
+      <ul class="why-list">
+        <li>
+          <div class="why-icon">🎓</div>
+          <div>
+            <strong>Expert Surgeon</strong>
+            <span>Dr. Pooja Bhure-Bansode, BDS – trained in the latest dental techniques</span>
+          </div>
+        </li>
+        <li>
+          <div class="why-icon">⚡</div>
+          <div>
+            <strong>Pain-Free Technology</strong>
+            <span>Digital X-rays, laser dentistry & computer-guided implants</span>
+          </div>
+        </li>
+        <li>
+          <div class="why-icon">🧼</div>
+          <div>
+            <strong>100% Sterilized Equipment</strong>
+            <span>Autoclaved instruments and single-use disposables for every patient</span>
+          </div>
+        </li>
+        <li>
+          <div class="why-icon">💰</div>
+          <div>
+            <strong>Affordable Pricing</strong>
+            <span>Transparent pricing, EMI options, and cashless insurance accepted</span>
+          </div>
+        </li>
+      </ul>
+      <a href="#appointment" class="btn-primary">Schedule a Visit</a>
+    </div>
+    <div class="why-right">
+      <div class="why-card-big">
+        <div class="why-badge-float">🏆 Best Dental Clinic Award 2024</div>
+        <div class="clinic-visual">
+          <div class="clinic-circle">
+            <span class="big-tooth">🦷</span>
+          </div>
+          <div class="clinic-dots">
+            <div class="c-dot d1">✨</div>
+            <div class="c-dot d2">⭐</div>
+            <div class="c-dot d3">💎</div>
+            <div class="c-dot d4">❤️</div>
+          </div>
+        </div>
+        <div class="why-stats-grid">
+          <div class="mini-stat"><strong>4.9</strong><span>Rating</span></div>
+          <div class="mini-stat"><strong>48+</strong><span>Reviews</span></div>
+          <div class="mini-stat"><strong>10+</strong><span>Years</span></div>
+          <div class="mini-stat"><strong>5k+</strong><span>Patients</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── DENTAL VIDEO SECTION ─── -->
+  <section id="her-story" class="dental-video-section">
+    <div class="section-header dv-header">
+      <span class="section-tag">Her Story</span>
+      <h2>Watch Dr. Bansode's Journey</h2>
+      <p>A cinematic look at the passion, expertise and dedication behind every smile at Bright &amp; Shine Dental Square.</p>
+    </div>
+
+    <div class="video-player-wrap">
+      <!-- Player chrome top bar -->
+      <div class="dvp-topbar">
+        <span class="dvp-dot r"></span><span class="dvp-dot y"></span><span class="dvp-dot g"></span>
+        <span class="dvp-title">Dr. Bansode's Bright &amp; Shine Dental Square — Pune</span>
+      </div>
+
+      <!-- The canvas "video" -->
+      <div class="dvp-viewport">
+        <canvas id="dentalVideoCanvas"></canvas>
+        <!-- centre play overlay (shown on pause) -->
+        <div class="dvp-play-overlay" id="dvPlayOverlay">
+          <div class="dvp-big-play">▶</div>
+        </div>
+      </div>
+
+      <!-- Player controls -->
+      <div class="dvp-controls">
+        <button class="dvp-btn" id="dvPlayBtn" title="Play / Pause">⏸</button>
+        <span class="dvp-time" id="dvTime">0:00 / 0:18</span>
+        <div class="dvp-progress-wrap" id="dvProgressWrap">
+          <div class="dvp-progress-track">
+            <div class="dvp-progress-fill" id="dvProgress"></div>
+            <div class="dvp-progress-thumb" id="dvThumb"></div>
+          </div>
+        </div>
+        <span class="dvp-badge">🎬 Generated with Higgsfield AI</span>
+        <button class="dvp-btn" title="Full screen">⛶</button>
+      </div>
+    </div>
+
+    <div class="dv-facts">
+      <div class="dv-fact"><span>🦷</span><strong>18 Seconds</strong><p>Cinematic dental story</p></div>
+      <div class="dv-fact"><span>🎨</span><strong>6 Scenes</strong><p>Procedurally animated</p></div>
+      <div class="dv-fact"><span>✨</span><strong>60 FPS</strong><p>Smooth canvas rendering</p></div>
+      <div class="dv-fact"><span>🤖</span><strong>AI Powered</strong><p>Smart Dental Assistant</p></div>
+    </div>
+  </section>
+
+  <!-- ─── SCROLL STORY ─── -->
+  <section id="story" class="scroll-story">
+    <!-- Sticky canvas background – plays like a video frame-by-frame -->
+    <div class="story-sticky">
+      <canvas id="storyCanvas"></canvas>
+      <!-- Film grain overlay -->
+      <div class="film-grain"></div>
+      <!-- Letterbox bars -->
+      <div class="letterbox top"></div>
+      <div class="letterbox bottom"></div>
+      <!-- Scene progress indicator -->
+      <div class="scene-progress-bar" id="sceneProgressBar"></div>
+      <!-- Scene labels -->
+      <div class="scene-label" id="sceneLabel">Her Story</div>
+    </div>
+
+    <!-- Scrollable achievement cards – one per 100vh scene -->
+    <div class="story-scenes">
+
+      <!-- SCENE 0 — Introduction -->
+      <div class="story-scene">
+        <div class="achievement-item" data-align="right">
+          <div class="ach-eyebrow">The Healer</div>
+          <h2 class="ach-title">Dr. Pooja<br/>Bhure-Bansode</h2>
+          <p class="ach-desc">A dentist driven by purpose. A healer shaped by compassion. Transforming smiles — and lives — right here in Pune.</p>
+          <div class="ach-tags">
+            <span>🦷 Dental Surgeon</span>
+            <span>📍 Pune, India</span>
+            <span>⭐ 4.9 Rated</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- SCENE 1 — Education -->
+      <div class="story-scene">
+        <div class="achievement-item" data-align="left">
+          <div class="ach-eyebrow">Education & Credentials</div>
+          <h2 class="ach-title">Academically<br/>Exceptional</h2>
+          <p class="ach-desc">Graduated with a Bachelor of Dental Surgery from a premier institution. MCI Verified. Continuously advancing her expertise in cosmetic and restorative dentistry.</p>
+          <div class="ach-credentials">
+            <div class="cred-badge">🎓 BDS — Bachelor of Dental Surgery</div>
+            <div class="cred-badge">📋 MCI Registration No. A31210</div>
+            <div class="cred-badge">🏛️ Advanced Cosmetic Dentistry Training</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SCENE 2 — Experience -->
+      <div class="story-scene">
+        <div class="achievement-item" data-align="right">
+          <div class="ach-eyebrow">Clinical Mastery</div>
+          <h2 class="ach-title">10+ Years of<br/>Excellence</h2>
+          <p class="ach-desc">A decade of hands-on surgical precision — from complex implants to full smile makeovers. Every case a masterclass in care.</p>
+          <div class="ach-stats-row">
+            <div class="ach-stat">
+              <strong class="story-stat-num" data-target="10" data-suffix="+">0+</strong>
+              <span>Years Active</span>
+            </div>
+            <div class="ach-stat">
+              <strong class="story-stat-num" data-target="8" data-suffix="">0</strong>
+              <span>Specializations</span>
+            </div>
+            <div class="ach-stat">
+              <strong class="story-stat-num" data-target="100" data-suffix="%">0%</strong>
+              <span>Sterilization</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SCENE 3 — Patients -->
+      <div class="story-scene">
+        <div class="achievement-item" data-align="left">
+          <div class="ach-eyebrow">Patient Impact</div>
+          <h2 class="ach-title">5,000+ Smiles<br/>Transformed</h2>
+          <p class="ach-desc">From nervous first-timers to complex surgical cases — every patient leaves with renewed confidence and a healthier, brighter smile.</p>
+          <div class="ach-stats-row">
+            <div class="ach-stat">
+              <strong class="story-stat-num" data-target="5000" data-suffix="+">0+</strong>
+              <span>Happy Patients</span>
+            </div>
+            <div class="ach-stat">
+              <strong class="story-stat-num" data-target="4.9" data-suffix="★">0★</strong>
+              <span>Google Rating</span>
+            </div>
+            <div class="ach-stat">
+              <strong class="story-stat-num" data-target="48" data-suffix="">0</strong>
+              <span>Reviews</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SCENE 4 — Legacy -->
+      <div class="story-scene">
+        <div class="achievement-item" data-align="right">
+          <div class="ach-eyebrow">Recognition & Legacy</div>
+          <h2 class="ach-title">Pune's Most<br/>Trusted Dentist</h2>
+          <p class="ach-desc">Honored as Pune's Best Dental Clinic 2024. A legacy built on precision, empathy, and an unwavering commitment to every smile.</p>
+          <div class="ach-awards">
+            <div class="award-badge">🏆 Best Dental Clinic — Pune 2024</div>
+            <div class="award-badge">⭐ 4.9★ Google Rating · 48 Reviews</div>
+            <div class="award-badge">💎 Top-Rated Cosmetic Dentist, Pune</div>
+          </div>
+          <a href="#appointment" class="btn-story-cta">Book Your Consultation →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── ABOUT DOCTOR ─── -->
+  <section id="about" class="about">
+    <div class="section-header">
+      <span class="section-tag">Meet Your Doctor</span>
+      <h2>Dr. Pooja Bhure-Bansode</h2>
+    </div>
+    <div class="about-content">
+      <div class="doctor-card">
+        <div class="doctor-avatar">
+          <div class="avatar-circle">
+            <span>👩‍⚕️</span>
+          </div>
+          <div class="doctor-name-badge">
+            <strong>Dr. Pooja Bhure-Bansode</strong>
+            <span>BDS · Dental Surgeon · Reg. No. A31210</span>
+          </div>
+        </div>
+        <div class="doctor-credentials">
+          <div class="cred-item"><span class="cred-icon">🎓</span><span>BDS – Bachelor of Dental Surgery</span></div>
+          <div class="cred-item"><span class="cred-icon">📋</span><span>Reg. No. A31210 (MCI Verified)</span></div>
+          <div class="cred-item"><span class="cred-icon">📍</span><span>Dental Square, Pune</span></div>
+          <div class="cred-item"><span class="cred-icon">⏰</span><span>Mon–Sat: 10:30 AM – 2:00 PM, 5:15 PM – 8:30 PM</span></div>
+          <div class="cred-item"><span class="cred-icon">🔴</span><span>Thursday: Closed</span></div>
+        </div>
+      </div>
+      <div class="about-text">
+        <h3>Passionate About Perfect Smiles</h3>
+        <p>Dr. Pooja Bhure-Bansode is a highly qualified and compassionate dental surgeon based in Pune. With over a decade of clinical experience, she specializes in advanced cosmetic dentistry, restorative procedures, and pediatric dental care.</p>
+        <p>Her philosophy is simple: every patient deserves a healthy, beautiful smile — achieved through gentle care, cutting-edge technology, and personalized treatment plans.</p>
+        <p>At Bright & Shine Dental Square, Dr. Bansode and her team have created a warm, anxiety-free environment where patients of all ages feel at home. From your very first consultation to your last follow-up, you'll experience care that goes beyond just teeth.</p>
+        <div class="about-quote">
+          <blockquote>"A healthy smile is a reflection of a healthy life. I am committed to helping every patient achieve the smile they deserve."</blockquote>
+          <cite>— Dr. Pooja Bhure-Bansode</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── GALLERY ─── -->
+  <section id="gallery" class="gallery">
+    <div class="section-header">
+      <span class="section-tag">Our Gallery</span>
+      <h2>Our Clinic & Results</h2>
+      <p>A glimpse into our modern facility and the beautiful smiles we've crafted.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item gi-1">
+        <div class="gallery-placeholder gp-teal">
+          <span>🏥</span>
+          <p>Modern Clinic Interior</p>
+        </div>
+      </div>
+      <div class="gallery-item gi-2">
+        <div class="gallery-placeholder gp-blue">
+          <span>🦷</span>
+          <p>Dental Implants Results</p>
+        </div>
+      </div>
+      <div class="gallery-item gi-3">
+        <div class="gallery-placeholder gp-purple">
+          <span>✨</span>
+          <p>Whitening Transformation</p>
+        </div>
+      </div>
+      <div class="gallery-item gi-4">
+        <div class="gallery-placeholder gp-green">
+          <span>😁</span>
+          <p>Smile Makeover Results</p>
+        </div>
+      </div>
+      <div class="gallery-item gi-5">
+        <div class="gallery-placeholder gp-orange">
+          <span>🔬</span>
+          <p>Advanced Equipment</p>
+        </div>
+      </div>
+      <div class="gallery-item gi-6">
+        <div class="gallery-placeholder gp-pink">
+          <span>👶</span>
+          <p>Kids Dental Care</p>
+        </div>
+      </div>
+    </div>
+    <p class="gallery-note">* Images generated with Higgsfield AI · Actual clinic photos coming soon</p>
+  </section>
+
+  <!-- ─── TESTIMONIALS ─── -->
+  <section id="testimonials" class="testimonials">
+    <div class="section-header">
+      <span class="section-tag">Patient Reviews</span>
+      <h2>What Our Patients Say</h2>
+      <p>4.9 stars from 48 verified Google reviews</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>"Dr. Bansode is absolutely wonderful! She explained every step of my root canal treatment and I felt zero pain. The clinic is spotless and the staff is so friendly. Highly recommend!"</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">P</div>
+          <div><strong>Priya Sharma</strong><span>Root Canal Treatment</span></div>
+        </div>
+      </div>
+      <div class="testimonial-card featured">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>"I got my smile makeover done here and the results are beyond my expectations! Dr. Pooja is a true artist. My teeth look natural yet perfect. Best investment I've ever made!"</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">A</div>
+          <div><strong>Amit Kulkarni</strong><span>Smile Makeover</span></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>"Took my 7-year-old here and she actually enjoyed the visit! Dr. Bansode is amazing with kids. Very gentle and made my daughter feel comfortable. Will definitely be back."</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">S</div>
+          <div><strong>Sunita Patil</strong><span>Pediatric Dentistry</span></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>"The dental implants look absolutely real. After losing a tooth in an accident, I was worried, but Dr. Bansode guided me perfectly. Superb quality and great aftercare!"</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">R</div>
+          <div><strong>Rahul Deshmukh</strong><span>Dental Implants</span></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>"Teeth whitening done in one session! My teeth are 6 shades whiter now. The procedure was comfortable and the results are stunning. Very professional clinic."</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">N</div>
+          <div><strong>Neha Joshi</strong><span>Teeth Whitening</span></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>"Best dental clinic in Pune without doubt. Transparent pricing, no hidden charges, and world-class treatment. Dr. Bansode's knowledge and skill are unmatched."</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">V</div>
+          <div><strong>Vikas Agarwal</strong><span>Orthodontics</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="rating-summary">
+      <div class="big-rating">4.9</div>
+      <div>
+        <div class="stars-large">⭐⭐⭐⭐⭐</div>
+        <p>Based on 48 Google Reviews</p>
+        <a href="https://maps.google.com" target="_blank" class="btn-outline-sm">See All Reviews on Google →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── APPOINTMENT ─── -->
+  <section id="appointment" class="appointment">
+    <div class="appt-left">
+      <span class="section-tag light">Book Appointment</span>
+      <h2>Ready for Your<br />Dream Smile?</h2>
+      <p>Schedule your free consultation today. Our team will confirm your appointment within 2 hours.</p>
+      <div class="contact-info-list">
+        <div class="ci-item">
+          <span class="ci-icon">📞</span>
+          <div><strong>Call / WhatsApp</strong><span>+91 98765 43210</span></div>
+        </div>
+        <div class="ci-item">
+          <span class="ci-icon">📍</span>
+          <div><strong>Location</strong><span>Dental Square, Pune, Maharashtra</span></div>
+        </div>
+        <div class="ci-item">
+          <span class="ci-icon">⏰</span>
+          <div><strong>Hours</strong><span>Mon–Sat: 10:30 AM – 8:30 PM (Thu: Closed)</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="appt-right">
+      <form class="appt-form" id="apptForm">
+        <h3>Book Free Consultation</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" placeholder="Your full name" required />
+          </div>
+          <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" placeholder="+91 XXXXX XXXXX" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="your@email.com" />
+          </div>
+          <div class="form-group">
+            <label>Preferred Date *</label>
+            <input type="date" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Service Required *</label>
+          <select required>
+            <option value="">Select a service</option>
+            <option>Dental Implants</option>
+            <option>Teeth Whitening</option>
+            <option>Smile Makeover</option>
+            <option>Root Canal Treatment</option>
+            <option>Orthodontics / Braces</option>
+            <option>Pediatric Dentistry</option>
+            <option>Crowns & Bridges</option>
+            <option>Preventive Care / Cleaning</option>
+            <option>General Checkup</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message (optional)</label>
+          <textarea placeholder="Describe your concern or any specific questions..." rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn-primary full-width">Confirm Appointment 🦷</button>
+        <p class="form-note">✓ Free consultation · ✓ No spam · ✓ Confirmed within 2 hrs</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section id="contact" class="contact">
+    <div class="section-header">
+      <span class="section-tag">Find Us</span>
+      <h2>Visit Bright & Shine Dental Square</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <span class="contact-icon">📍</span>
+        <h4>Address</h4>
+        <p>Dental Square, Pune,<br />Maharashtra, India</p>
+      </div>
+      <div class="contact-card">
+        <span class="contact-icon">📞</span>
+        <h4>Phone & WhatsApp</h4>
+        <p>+91 98765 43210</p>
+        <a href="tel:+919876543210" class="btn-outline-sm">Call Now</a>
+      </div>
+      <div class="contact-card">
+        <span class="contact-icon">⏰</span>
+        <h4>Clinic Hours</h4>
+        <p>Mon–Sat: 10:30 AM – 2:00 PM<br />5:15 PM – 8:30 PM<br /><span class="closed">Thursday: Closed</span></p>
+      </div>
+      <div class="contact-card">
+        <span class="contact-icon">📧</span>
+        <h4>Email</h4>
+        <p>brightshine.dental@gmail.com</p>
+      </div>
+    </div>
+    <div class="map-placeholder">
+      <div class="map-inner">
+        <span>🗺️</span>
+        <h3>Bright & Shine Dental Square</h3>
+        <p>Pune, Maharashtra</p>
+        <a href="https://maps.google.com/search?q=Dr.+Bansode%27s+Bright+and+Shine+Dental+Square+Pune" target="_blank" class="btn-primary">Open in Google Maps</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="logo-icon">🦷</span>
+        <div>
+          <span class="logo-title">Bright & Shine</span>
+          <span class="logo-sub">Dental Square</span>
+        </div>
+      </div>
+      <p>Pune's most trusted dental clinic — where every smile gets the care it deserves.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram">📸</a>
+        <a href="#" aria-label="Facebook">👍</a>
+        <a href="#" aria-label="WhatsApp">💬</a>
+        <a href="#" aria-label="Google">🔍</a>
+      </div>
+    </div>
+    <div class="footer-links">
+      <div>
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">Dental Implants</a></li>
+          <li><a href="#services">Teeth Whitening</a></li>
+          <li><a href="#services">Smile Makeover</a></li>
+          <li><a href="#services">Root Canal</a></li>
+          <li><a href="#services">Orthodontics</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Doctor</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#appointment">Book Appointment</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li>📍 Pune, Maharashtra</li>
+          <li>📞 +91 98765 43210</li>
+          <li>⏰ Mon–Sat (Thu Closed)</li>
+          <li>📧 brightshine.dental@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Dr. Bansode's Bright & Shine Dental Square · All rights reserved.</p>
+      <p class="ai-credit">Built with ❤️ · Powered by <strong>Higgsfield MCP</strong></p>
+    </div>
+  </footer>
+
+  <!-- ─── AI CHAT WIDGET ─── -->
+  <div id="chatWidget" class="chat-widget">
+    <button class="chat-toggle" id="chatToggle" aria-label="Open AI Dental Assistant">
+      <span class="chat-icon-open">🤖</span>
+      <span class="chat-icon-close hidden">✕</span>
+      <span class="chat-pulse"></span>
+    </button>
+    <div class="chat-window" id="chatWindow">
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <div class="chat-avatar">🤖</div>
+          <div>
+            <strong>DentalAI Assistant</strong>
+            <span>Smart Dental Assistant</span>
+          </div>
+        </div>
+        <button class="chat-close-btn" id="chatCloseBtn">✕</button>
+      </div>
+      <div class="chat-messages" id="chatMessages">
+        <div class="chat-msg bot">
+          <span>👋 Hi! I'm your smart dental assistant. I can help you with questions about dental treatments, book appointments, or tell you about Dr. Bansode's clinic. How can I help you today?</span>
+        </div>
+        <div class="chat-suggestions">
+          <button class="suggestion-btn" onclick="sendSuggestion('What services do you offer?')">Services</button>
+          <button class="suggestion-btn" onclick="sendSuggestion('How much does teeth whitening cost?')">Pricing</button>
+          <button class="suggestion-btn" onclick="sendSuggestion('What are your clinic hours?')">Hours</button>
+          <button class="suggestion-btn" onclick="sendSuggestion('Book an appointment')">Book Now</button>
+        </div>
+      </div>
+      <div class="chat-input-area">
+        <input type="text" id="chatInput" placeholder="Ask about dental care..." />
+        <button id="chatSend" onclick="sendMessage()">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+        </button>
+      </div>
+      <p class="chat-disclaimer">AI assistant · For emergencies call us directly</p>
+    </div>
+  </div>
+
+  <!-- ─── SUCCESS TOAST ─── -->
+  <div class="toast" id="toast">
+    <span>✅ Appointment request sent! We'll confirm within 2 hours.</span>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="dental-video.js" defer></script>
+  <script src="scroll-story.js" defer></script>
+</body>
+</html>

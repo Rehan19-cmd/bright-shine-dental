@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "higgsfield": {
+      "type": "http",
+      "url": "https://mcp.higgsfield.ai/mcp",
+      "note": "Higgsfield MCP — AI image & video generation (Sora, Veo, Kling, Flux, Seedream, Soul, Cinema Studio). Authenticate via: claude mcp add --transport http --scope user higgsfield https://mcp.higgsfield.ai/mcp"
+    }
+  }
+}
